@@ -1,5 +1,7 @@
 <?php
 
+namespace AndersonMadeira\Requestor\Tests;
+
 use AndersonMadeira\Requestor\Requestor;
 use PHPUnit\Framework\TestCase;
 

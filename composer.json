@@ -29,7 +29,12 @@
       "AndersonMadeira\\Requestor\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "AndersonMadeira\\Requestor\\Tests\\": "tests/"
+    }
+  },
   "scripts": {
-    "test": "phpunit"
+    "test": "phpunit --colors=always"
   }
 }
