@@ -1,4 +1,8 @@
-<?php namespace AndersonMadeira\Requestor;
+<?php
+
+namespace AndersonMadeira\Requestor;
+
+use GuzzleHttp\Client;
 
 /**
  *  Main Class?
@@ -7,6 +11,26 @@
  */
 class Requestor
 {
+    /**
+     * @var Client
+     */
+    var $httpClient;
+
+    public function constructor()
+    {
+        $this->httpClient = new Client();
+    }
+
+    public function getHttpClient(): Client
+    {
+        return $this->httpClient;
+    }
+
+    public function setHttpClient(Client $client): void
+    {
+        $this->httpClient = $client;
+    }
+
     /**
      * Greetings
      *
@@ -18,4 +42,5 @@ class Requestor
     {
         return "Hello {$yourName}";
     }
+
 }
